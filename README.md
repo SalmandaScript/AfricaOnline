@@ -1,2 +1,2 @@
 # AfricaOnline
-Interesting facts about Africa, and Entertainment.
+Interesting facts about Africa, plus Entertainment.
