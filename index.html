@@ -80,10 +80,10 @@
  <ul class="nav nav-pills nav-stacked">
                 
 <div class="well well-sm">
-<li><a href="file:///storage/emulated/0/Webdevelopment/MyPresident/President.html"><label style ="border:groove orange; border-radius: 8px; background-color:orange; font-size:25px;"><img src ="africa.png" width ="40" height ="40"/>African's Heads of State</a></li>
+<li><a onclick="myPresident();"><label style ="border:groove orange; border-radius: 8px; background-color:orange; font-size:25px;"><img src ="africa.png" width ="40" height ="40"/>African's Heads of State</a></li>
 </div>
     
-    <li><a href="file:///storage/emulated/0/salmanda/capitalCities/capitalCities.html"><label style="border: groove orange; border-radius: 8px; background-color:orange; font-size:25px"><img src="city.png" width ="40" height ="40"/>Africa's Capital Cities</label></a></li>
+    <li><a onclick="capitalCities();"><label style="border: groove orange; border-radius: 8px; background-color:orange; font-size:25px"><img src="city.png" width ="40" height ="40"/>Africa's Capital Cities</label></a></li>
     
 <li><a href="file:///storage/emulated/0/salmanda/riddles/riddles.html"><label style="border: groove orange; border-radius: 8px; background-color:orange; font-size:25px"><img src="riddles.png" width ="40" height ="40"/>A Book of Riddles</label></a></li>
     
@@ -116,13 +116,15 @@
 <!-- Collection of nav links and other content for toggling --> 
 <div id="navbarCollapse" class="collapse navbar-collapse"> 
 <ul class="nav navbar-nav"> 
-<li class="salma2"><a href="file:///storage/emulated/0/Webdevelopment/index2/index2.html"><img class="picture" src="home.png"/>Home</a></li>
+<li class="salma2"><a onclick="africaOnline();"><img class="picture" src="home.png"/>Home</a></li>
  
-<li><a href="file:///storage/emulated/0/Webdevelopment/about/help.html"><img class="picture" src="helpp.png"/>Help</a></li> 
-<li><a href="file:///storage/emulated/0/Webdevelopment/about/about.html"><img class="picture" src="about.png"/>About</a></li>
+<li><a onclick="help();"><img class="picture" src="helpp.png"/>Help</a></li> 
 
-<li><a href="file:///storage/emulated/0/Webdevelopment/about/contact.html"><img class="picture" src="contact.png"/>Contact</a></li>
-<li> <a href="file:///storage/emulated/0/Webdevelopment/about/termsOfService.html"><img class="picture" src="star.png"/>Terms of Services</a></li> 
+<li><a onclick="about();"><img class="picture" src="about.png"/>About</a></li>
+
+<li><a onclick="contact();"><img class="picture" src="contact.png"/>Contact</a></li>
+
+<li> <a onclick="termsOfService();"><img class="picture" src="star.png"/>Terms of Services</a></li> 
 </ul> 
 <!--<ul class="nav navbar-nav navbar-right"> 
 <li><a href="#">Login</a></li> 
@@ -136,6 +138,9 @@
 <script src="jquery.min.js"></script>
  
 <script src="bootstrap.min.js"></script> 
+
+<script src="index.js"></script>
+
 
 </body>
 </html>
