@@ -1,8 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en" manifest="https://salmandascript.github.io/Africa Online"/>
+
 <head>
-	<title>Africa Online</title>
+<title>Africa Online</title>
 <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     
     <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7"/>
     
@@ -14,7 +17,11 @@
     
     <meta name="theme-color" content="teal"/>
     
-  <link rel="stylesheet"  href="index.css"/> 
+    <link rel="stylesheet"  href="jquery-ui.min.css"/>
+    
+  <link rel="stylesheet"  href="index.css"/>
+  
+   <link rel="stylesheet" href="bootstrap.min.css"/>
   
   <link rel="icon" type="image" href="papirus.png"/>
   
@@ -23,6 +30,8 @@
   <style>
   	body{
   		/*background-image: fixed;*/
+  		text-align: center;
+  		font-family: georgia;
   	}
   	.salma{
   		border: 2px groove #ddd;
@@ -33,15 +42,216 @@
   		background-color: white;
   	}
   	
+  	span{
+  	background-color: orange;
+  	border-radius: 4pt;
+  	border: groove white 2pt;
+  	}
   </style>
  <!-- <base href="http://www.thisafrica.com" target="_blank">-->
   </head>  
     
 <body id="gradclass">
 
-<link rel="stylesheet" href="bootstrap.min.css"/>
+	<h1 style="color: teal; font-family: courier; font-size: 40px; text-shadow: 2px 2px 2px orange">Africa Online</h1>
 	
-	<center><h1 style="color: gray; font-family: courier; font-size: 40px; bold">Africa Online</h1></center>
+	<!--option menu-->
+<div class="btn-group">
+<button onclick="salmanda1();" id="demo1"
+ style="border-color: white; background: orange" 
+ data-toggle="dropdown" class="btn btn-default dropdown-toggle">📒Menu1</button> 
+
+<ul class="dropdown-menu royal2"> 
+<center><li><button onclick="newsChannel(); salmanda6();" id="demo6"
+ style="border-color: white" type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#myModal7">📰 News Channel</button>
+	
+<!--	<li class="divider"></li>
+	<li><button onclick="salmanda7();" id="demo7"
+	 style="border-color: white" type="button" class="btn btn-secondary btn-sm" data-toggle="modal" data-target="#myModal5"
+>🐒 Tourism</button></li>-->
+
+<!--<a href="file:///storage/emulated/0/salmanda/onlineRadio/musicStore/musicStore.html">-->
+	
+	<!--<button onclick="salmanda8();" id="demo8"
+	 style="border-color: white" type="button" class="btn btn-secondary btn-sm"
+	 onclick="alert('This Site is still under development.');">📚 Education</button> </a></li>-->
+
+<li class="divider"></li> 
+<li><button onclick="programming(); salmanda9();" id="demo9"
+ style="border-color: white" type="button" class="btn btn-secondary btn-sm">📟 Programming</button></li>
+
+<li class="divider"></li> 
+<li><button onclick="linkWikipedia(); salmanda10();" id="demo10"
+ style="border-color: white" type="button" class="btn btn-secondary btn-sm"><img style="width: 14pt" src="wikipeadia.png"/> Wikipeadia</button></li>
+
+<li class="divider"></li> 
+<li><button onclick="salmandaMusiq(); salmanda11();" id="demo11"
+ style="border-color: white" type="button" class="btn btn-secondary btn-sm">🎼 My Music</button></li>
+
+<!--<li class="divider"></li> 
+<li><button onclick="linkChatGPT(); salmanda12();" id="demo12"
+ style="border-color: white" type="button" class="btn btn-secondary btn-sm"><img style="width: 15pt" src="chatGPT.png"/> ChatGPT</button></li>-->
+
+<li class="divider"></li> 
+<li><button onclick="movieChannel(); salmanda13();" id="demo13"
+ style="border-color: white" type="button" class="btn btn-secondary btn-sm">🎬 Movie Channel</button></li>
+
+<li class="divider"></li> 
+<li><button onclick="royalFM(); salmanda14();" id="demo14"
+ style="border-color: white" type="button" class="btn btn-secondary btn-sm"><img style="width: 16pt" src="Royal.png"/> RoyalFM</button></li>
+
+<li class="divider"></li> 
+<li><button onclick="contact(); salmanda15();" id="demo15"
+ style="border-color: white" type="button" class="btn btn-secondary btn-sm">📬 FeedBack</button></li></center>
+</ul> 
+</div>
+<!--end option menu-->
+
+<!--option menu-->
+<div class="btn-group">
+<button onclick="salmanda4();" id="demo4"
+ style="border-color: white; background: orange" 
+ data-toggle="dropdown" class="btn btn-default dropdown-toggle">🌳Menu2</button> 
+
+<ul class="dropdown-menu royal2"> 
+<center><li><button onclick="capitalCities(); salmandaa();" id="demoa"
+ style="border-color: white" type="button" class="btn btn-secondary btn-sm">🌁Capital Cities</button>
+	
+	<li class="divider"></li>
+	<li><button onclick="myPresident(); salmandae();" id="demoe"
+	 style="border-color: white" type="button" class="btn btn-secondary btn-sm">👑 Heads of State </button></li>
+ 
+ <li class="divider"></li>
+	<li><button onclick="SmTech(); salmandab();" id="demob"
+	 style="border-color: white" type="button" class="btn btn-secondary btn-sm"><img style="width: 16pt" src="SmTech.png"/> 
+ SM Technology</button></li></center>
+</ul> 
+</div>
+<!--end option menu-->
+
+
+<button onclick="seer(); salmanda2();" id="demo2"
+ style="border-color: white; background: orange" type="button" class="btn btn-default"><img style="width: 14pt" src="Eye.png"/>Seer</button> 
+
+<!--Tutorials Application Form-->
+<button onclick="salmanda3();" id="demo3"
+ style="border-color: white; background: orange" 
+ type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">📚Tutor</button>
+
+ <div id="myModal" class="modal fade" >
+<div class="modal-dialog; modal-sm"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+
+<h5 style="text-align: center" class="modal-title">SM COMPUTER ENGINEERING TECHNOLOGY.</h5> 
+</div> 
+<div class="modal-body; level" style="color: gray"> 
+
+
+<p style="text-shadow: 2px 2px 2px teal">Tutorials Registration Form<br> 
+<strong>NOTE:</strong> Computer Basics is taught along the other subjects, for it is the foundation in this field.<br>
+Programming mainly focuses on web development using HTML, CSS and Javascript. Also them interested in this subject can download the source code for Profiler User Interface component free, and start building a project without any basic knowledge, support as well is always available.</p> 
+<a href="https://salmandascript.github.io/ProfilerDocumentation"><span>📥 Download Source Code</span></a><hr>
+	
+	<p>Fill Your Details Below</p>
+	
+	<form method="POST" enctype="multipart/form-data" action="mailto:clementjuma.cmm@gmail.com" onsubmit="callback()" >
+<label><span>First Name:</span></label> <input type="text" name="fname" placeholder="Enter First Name" required/><br><br>
+	
+<label><span>Last Name:</span></label> <input type="text" name="lname" placeholder="Enter Last Name"  required/><br><br>
+	
+<label><span>Gender:</span></label> &nbsp; &nbsp; &nbsp; <input type="text" name="gender" placeholder="Enter your Gender" required/><br><br>
+	
+<label><span>Age:</span></label>
+ &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <input type="number" name="age" placeholder="Enter your Age" required/><br><br>
+	
+<label><span>Location:</span></label> &nbsp; &nbsp; <input type="text" name="location" placeholder="Enter your Location" required/><br><br>
+	
+<label><span>Phone Number:</span></label> &nbsp; <input type="number" name="pnamber" placeholder="Enter Phone Number" required/><br><br>
+	
+	<label><span>E-mail (Optional):</span></label> <input type="text" name="email" placeholder="Enter E-mail Address"/><br><br>
+	
+<label>Image (Optional): </label>
+<button> <input type="file" name="image"/></button> <hr>
+		
+		<p>Select Subject</p>
+			
+		<input type="checkbox" name="checkbox1"/>Computer Basics<br>
+		
+			<input type="checkbox" name="checkbox2"/>Computer Literacy<br>
+			
+				<input type="checkbox" name="checkbox3"/>Computer Programming<br>
+				
+					<input type="checkbox" name="checkbox4"/>Computer Hardware Service<br>
+					
+						<input type="checkbox" name="checkbox5"/>Computer Networks<br><br>
+							
+			<button style="border-color: white" type="button" class="btn btn-secondary btn-sm"><input type="reset" value="Reset"/></button>
+							
+		<button style="border-color: white" type="button" class="btn btn-secondary btn-sm"><input type="submit" value="Submit"/></button>
+</form><br>
+
+</div> 
+<div class="modal-footer"> 
+<button style="border-color: gray"
+ type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Close &times;
+</button> 
+</div> 
+</div> 
+</div> 
+</div>
+<!--End Application Form-->
+
+
+
+<!--<button onclick="salmanda4(); SmTech();" id="demo4"
+ style="border-color: white; background: orange" 
+ type="button" class="btn btn-default"></button>-->
+<!--end of navigation buttons-->
+
+<!--FeedBack modal-->
+<div id="myModalE" class="modal fade" >
+<div class="modal-dialog; modal-lg"> 
+<div class="modal-content"> 
+<div class="modal-header"> 
+
+<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	 
+<h6 class="modal-title">IMPORTANT NOTICE.</h6> 
+</div> 
+
+<div class="modal-body; new"><br>
+	<div style="color: white"><p>Let's engage, we would Love to here from you please,  Send us your Comments, FeedBack and Ratings out of 10, on various Artist and projects. You might as well lnclude an image for publication purpose and contacts to receive updates.</p></div>
+	 
+	 <center>
+<form method ="post" 
+enctype ="text/plain" 
+name="TextArea" action="mailto:clementjuma.cmm@gmail.com" 
+onSubmit="feedBack();">
+
+	 <textarea style="background-color: gray"  rows='8' cols='40' placeholder="Type here..."
+	   name="TextArea" required="required">
+ </textarea>
+ 
+ <p>Send files and images for Publications</p>
+	 <input class="btn-sm btn-warning" type="file" required="required"/><br>
+
+	<button class="btn btn-secondary btn-sm" type ="submit">Send</button>
+	</center>
+	</form>
+ <h2></h2><hr>
+</div>
+        
+<div class="modal-footer"> 
+<button class="btn btn-secondary btn-sm" data-dismiss="modal">Close &times;
+</button> 
+</div> 
+</div> 
+</div> 
+</div>
+<!--FeedBack modal-->
 
 <div class="bs-example"> 
 <div id="myCarousel" class="carousel slide" data-ride="carousel"> 
@@ -50,24 +260,98 @@
 <li data-target="#myCarousel" data-slide-to="0" class="active"></li> 
 <li data-target="#myCarousel" data-slide-to="1"></li> 
 <li data-target="#myCarousel" data-slide-to="2"></li> 
+<li data-target="#myCarousel" data-slide-to="3"></li> 
+<li data-target="#myCarousel" data-slide-to="4"></li> 
+<li data-target="#myCarousel" data-slide-to="5"></li> 
+<li data-target="#myCarousel" data-slide-to="6"></li> 
+<li data-target="#myCarousel" data-slide-to="7"></li> 
+<li data-target="#myCarousel" data-slide-to="8"></li> 
+<li data-target="#myCarousel" data-slide-to="9"></li> 
 </ol> 
 <!-- Wrapper for carousel items --> 
 <div class="carousel-inner"> 
 <div class="item active"> 
-<img src="flagMap.png" alt="First Slide">
+<img src="flagMap.png" alt="First Slide"> <div class="carousel-caption"> 
+<h3>1/10</h3> 
+<p>This colorfull flag map of Africa is indeed a symbol of unity amongst African Nations.</p>
+</div> 
 	<figcaption style="color: white">Figure:1 Flag Map of Africa</figcaption>
 </div> 
 
 <div class="item"> 
-<img src="ColonialMap.png" alt="Second Slide"> 
+<img src="ColonialMap.png" alt="Second Slide"> <div class="carousel-caption"> 
+<h3>2/10</h3> 
+<p>This colonial flag map, is a reminder of africa's historical past.</p>
+</div> 
 <figcaption style="color: white">Figure:2 Colonialism Map of Africa.</figcaption>
 </div> 
 
 <div class="item"> 
+<img src="africa1.jpg" alt="Second Slide"> <div class="carousel-caption"> 
+<h3>3/10</h3> 
+<p>Many agree on the theory that the encient Egyptians were Black, what are your views.</p>
+</div> 
+<figcaption style="color: white">Figure:3 History of the ancient egyptians.</figcaption>
+</div> 
+
+<div class="item"> 
+<img src="africa2.jpg" alt="Second Slide"> <div class="carousel-caption"> 
+<h3>4/10</h3> 
+<p>There are more pyramids in sudan than they are in Egypt, this senario signifies the impact of the Egyptian culture.</p>
+</div> 
+<figcaption style="color: white">Figure:4 The pyramids of Sudan.</figcaption>
+</div> 
+
+<div class="item"> 
+<img src="africa3.jpg" alt="Second Slide"> <div class="carousel-caption"> 
+<h3>5/10</h3> 
+<p>The Golden Dagger and Golden Burial mask of king Tutkhanum.</p>
+</div> 
+<figcaption style="color: white">Figure:5 Golden Dagger & Mask of Tutkhanum.</figcaption>
+</div> 
+
+<div class="item"> 
+<img src="africa4.jpg" alt="Second Slide"> <div class="carousel-caption"> 
+<h3>6/10</h3> 
+<p>Africa is blessed with green vegetation due to the abundance of rain it receives, thus there are lots of wildlife in africa.</p>
+</div> 
+<figcaption style="color: white">Figure:6 Wildlife greazing in Africa.</figcaption>
+</div> 
+
+<div class="item"> 
+<img src="africa5.jpg" alt="Second Slide"> <div class="carousel-caption"> 
+<h3>7/10</h3> 
+<p>The Ankh was a dymbol of life in ancient Kemet (Egypt).</p>
+</div> 
+<figcaption style="color: white">Figure:7 The Ankh.</figcaption>
+</div> 
+
+<div class="item"> 
+<img src="africa6.jpg" alt="Second Slide"> <div class="carousel-caption"> 
+<h3>8/10</h3> 
+<p>Ptah Noster @4biddenknowledge</p>
+</div> 
+<figcaption style="color: white">Figure:2 Ptah Noster.</figcaption>
+</div> 
+
+<div class="item"> 
+<img src="africa7.jpg" alt="Second Slide"> <div class="carousel-caption"> 
+<h3>9/10</h3> 
+<p>Mansa musa the Richest man in history and he was black, from africa Mali.</p>
+</div> 
+<figcaption style="color: white">Figure:2 Mansa Musa.</figcaption>
+</div> 
+
+<div class="item"> 
 <img src="OdestCompany.png" alt="Third Slide"> 
+<div class="carousel-caption"> 
+<h3>10/10</h3> 
+<p>Here are some oldest companies in africa.</p>
+</div> 
 <figcaption style="color: white">Figure:3 Odest Companies in Africa.</figcaption>
 </div> 
 </div> 
+
 <!-- Carousel controls -->
 <a class="carousel-control left" href="#myCarousel" data-slide="prev">&laquo;
 </a> 
@@ -75,19 +359,85 @@
 <a class="carousel-control right" href="#myCarousel" data-slide="next">&raquo;
 </a> 
 </div> 
-</div> 
-
- <ul class="nav nav-pills nav-stacked">
-                
-<div class="well well-sm">
-<li><a onclick="myPresident();"><label style ="border:groove orange; border-radius: 8px; background-color:orange; font-size:25px;"><img src ="africa.png" width ="40" height ="40"/>African's Heads of State</a></li>
 </div>
+
+<p style="background-color: white; border: groove orange 2pt; border-radius: 8pt; margin: 12pt; font-family: georgia; font-size:12pt; color: teal">Here are the Top Channels for you.</p>
+
+<div class="container"> 
+<div class="row"> 
+<div class="col-xs-6"> 
+<div class="thumbnail">
+<a onclick="newsChannel();">
+<img class="picture2" src="papirus2.png"/>
+<div class="caption"> 
+<p style="color:teal">Africa Online News Channel</p></a> 
+</div> 
+</div>
+</div>
+
+<div class="col-xs-6"> 
+<div class="thumbnail">
+<a onclick="movieChannel();">
+<img class="picture2"
+src="videoChannel.png"/>
+<div class="caption"> 
+<p style="color: teal">Africa Online Movie Channel</p></a> 
+</div>
+</div> 
+</div> 
+</div> 
+</div>
+
+<div class="container"> 
+<div class="row"> 
+<div class="col-xs-6"> 
+<div class="thumbnail">
+<a onclick="myPresident();"><img class="picture2" src="flagMap.png"> <div class="caption"> 
+<p style="color: teal">African's Heads of State</p></a> 
+</div> 
+</div>
+</div>
+
+<div class="col-xs-6"> 
+<div class="thumbnail">
+<a onclick="capitalCities();"><img class="picture2" src="city.png"/>
+ <div class="caption"> 
+<p style="color: teal">Africa's Capital Cities</p></a> 
+</div>
+</div> 
+</div> 
+</div> 
+</div>
+
+<div class="container"> 
+<div class="row"> 
+<div class="col-xs-6"> 
+<div class="thumbnail">
+<a onclick="SmTech();">
+<img class="picture2" 
+src="SmTech.png"/>
+<div class="caption"> 
+<p style="color: teal">SM Computer Engineering Tech</p></a> 
+</div> 
+</div>
+</div>
+
+<div class="col-xs-6"> 
+<div class="thumbnail">
+<a onclick="seer();">
+	<img class="picture2"
+ src="Eye.png"/>
+ <div class="caption"> 
+<p style="color: teal">Seer Way of the Constellation</p></a> 
+</div>
+</div> 
+</div> 
+</div> 
+</div>
+
+	<a onclick="salmandaMusiq();"><p style="background-color: orange; border-radius: 4pt; margin: 3pt; padding: 3pt;"> <img style="padding: 3px; margin-bottom:1px;" src="Salmanda.jpg" width="100%" height="600" alt="Salmanda"/>For More on Reggae, Dancehall and Afro Beats Sounds, by me, click image or here.</p></a><br>
     
-    <li><a onclick="capitalCities();"><label style="border: groove orange; border-radius: 8px; background-color:orange; font-size:25px"><img src="city.png" width ="40" height ="40"/>Africa's Capital Cities</label></a></li>
-    
-<!--<li><a href="file:///storage/emulated/0/salmanda/riddles/riddles.html"><label style="border: groove orange; border-radius: 8px; background-color:orange; font-size:25px"><img src="riddles.png" width ="40" height ="40"/>A Book of Riddles</label></a></li>
-    
-<li><a href="file:///storage/emulated/0/salmanda/salmanda/salmanda.html"><label style ="border: groove orange; border-radius: 8px; background-color:orange; font-size:25px"><img src ="salmanda.png" width ="40" height ="40"/>Salmanda MusiQ</a></li>
+<!--<li><a href="file:///storage/emulated/0/salmanda/salmanda/salmanda.html"><label style ="border: groove orange; border-radius: 8px; background-color:orange; font-size:25px"><img src ="salmanda.png" width ="40" height ="40"/>Salmanda MusiQ</a></li>
 
 <li><a href="file:///storage/emulated/0/salmanda/engineering/engineering.html"><label style ="border: groove orange; border-radius: 8px; background-color:orange; font-size:23px"><img src ="computer.png" width ="35" height ="35"/>Computer Engineerin Tech</label></a></li>
 	
@@ -126,20 +476,25 @@
 
 <li> <a onclick="Service();"><img class="picture" src="star.png"/>Terms of Services</a></li> 
 </ul> 
+
+<div class="ui" id = "dialog-7" title = "AFRICA WE ARE ONLINE">Thanks for visting the channel. It's a project in progress, you can support the project to ensure it's progress, you will get an advertisment spot for a life time within the application. Embeding links or other software tools with your own content. Seriously l can be your own computer software or hardware human bot, automating your tasks to provide enfincient and quality service delivery, harnesing the power of technology to empower our development.</div>
+
 <!--<ul class="nav navbar-nav navbar-right"> 
 <li><a href="#">Login</a></li> 
 </ul>-->
-<footer>&copy Copyright 2024 Salmanda | All Rights Reserved.
+<footer>&copy Copyright 2024 SM Tech | All Rights Reserved.
 </footer>
 </div>
 </div> 
 </nav> 
 
-<script src="jquery.min.js"></script>
- 
-<script src="bootstrap.min.js"></script> 
+<script src="jquery.min.js" defer></script>
 
-<script src="index.js"></script>
+<script src="jquery-ui.min.js" defer></script>
+ 
+<script src="bootstrap.min.js" defer></script> 
+
+<script src="index.js" defer></script>
 
 
 </body>
